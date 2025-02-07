@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+body, html {
+    width: 100%;
+    height: 100vh;
+    background-color: hsl(212, 45%, 89%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 10px;
+    background-color: white;
+    border-radius: 10px;
+    align-items: center;
+    width: 200px;
+  }
+  .qrcode-background {
+    background-color: white;
+    width: 180px;
+    height: 290px;
+    padding: 20px;
+    border-radius: 10px;
+    z-index: 1;
+    position: absolute;
+    /*Oh my goodness figuring out how to make this background
+    appear behind the QR code and centered was a nightmare. I was about to give
+    up right before I figured it out. I still don't entirely understand
+    flexbox really well. The whole positioning and display stuff is confusing.
+    but after trying things over and over it worked so what the heck :) */
+  }
+  
+  .qr-code-img {
+    border-radius: 10px;
+    width: 200px;
+    height: auto;
+    align-items: center;
+    position: relative;
+    /*I had a huge problem with this image and its centering.
+    For way to long I could not get it to center. It wasn't until 
+    I realized that my text was pushing it to the side that I didn't 
+    throw my laptop out the window. */
+    
+  }
+  
+  .text-1 {
+    font-size: 15px;
+    font-weight: 700;
+    font-family: 'Outfit', sans-serif;
+    text-align: center;
+    position: relative;
+  }
+
+  .text-2 {
+    font-size: 10px;
+    font-family: 'Outfit', sans-serif;
+    color: hsl(216, 15%, 48%);
+    text-align: center;
+    position: relative;
+    /*I am not really sure if I made this the efficient way but
+    it is centered so I went with it. */
+  }
+
+  /*If it wasn't for google and chat GPT I would have given up.*/
